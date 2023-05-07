@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1>Rock, paper, scissors</h1>
+		<div class="total-score-container">
+			<h2>Best of threes won:</h2>
+			<div class="total-scores">
+				<h3>You: <span class="total-score-player"></span></h3>
+				<h3>Computer: <span class="total-score-computer"></span></h3>
+			</div>
+		</div>
+    <div class="game">
+		<div class="player-options">
+			<h2>You</h2>
+			<div class="options__top-row">
+				<button class="option__player option" id="rock">
+					<img src="/assets/rock.png">
+				</button>
+			</div>
+			<div class="options__bottom-row">
+				<button class="option__player option" id="paper">
+					<img src="/assets/paper.png">
+				</button>
+				<button class="option__player option" id="scissors">
+					<img src="/assets/scissors.png">
+				</button>
+			</div>
+		</div>
+		<div class="computer-options">
+			<h2>Computer</h2>
+			<!-- SVG loader form https://codepen.io/nikhil8krishnan/pen/rVoXJa -->
+			 <div class="option-loader">
+				<svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+				<path fill="#000" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+				  <animateTransform 
+				  attributeName="transform" 
+				  attributeType="XML" 
+				  type="rotate"
+				  dur="1s" 
+				  from="0 50 50"
+				  to="360 50 50" 
+				  repeatCount="indefinite" />
+				 </path>
+		  </svg>
+			 </div>
+		</div>
+    </div>
+	 <div class="score-container">
+		<div class="game-score">
+			<h2 class="game-score__player">0</h2>
+			<h2 class="game-score__computer">0</h2>
+		</div>
+		<div class="game-description">
+			<p>Choose your weapon</p>
+		</div>
+	 </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

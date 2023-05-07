@@ -1,0 +1,21 @@
+/* * {
+	border: 1px dashed red;
+} */
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+	html {
+		font-size: 12px;
+	}
+}
